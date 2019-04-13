@@ -1,12 +1,12 @@
 version: '2'
 services:
-  carne-leao:
-    container_name: carne-leao
-    image: aureliojargas/carne-leao
+  irpf:
+    container_name: irpf
+    image: rochacbruno/irpf
     build: .
     environment:
       - DISPLAY
       - _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - ~/ProgramasRFB:/home/leao/ProgramasRFB
+      - ~/ProgramasRFB:/home/irpf/ProgramasRFB
